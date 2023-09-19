@@ -3,45 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../essets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../essets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <ul id="barra-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li> <a href="biografia.html">Biografia</a></li>
-        <li><a href="discografia.html">Discografia</a></li>
-        <li> <a href="galeria.html">Galeria</a></li>
-        <li> <a href="redes-sociales.html">Redes Sociales</a></li>
+        <li class="btn-custom-purple"><a href="../index.html">Home</a></li >
+        <li class="btn-custom-purple"><a href="../pages/biografia.html">Biografia</a></li>
+        <li class="btn-custom-purple"><a href="discografia.html">Discografia</a></li>
+        <li class="btn-custom-purple"><a href="../pages/galeria.html">Galeria</a></li>
+        <li class="btn-custom-purple"><a href="../pages/redes-sociales.html">Redes Sociales</a></li>
     </ul>
 
+    
+<main>
+    <style>
+        .custom-col {
+        display: grid;
+        width: 40rem;
+        }
+    </style>
     <div class="titulo-1">
         <h3 class="titulo-h3" >Discos y Sonidos</h3>
     </div>
-            <div class="padre-discos">
-    <div class="disco-1">
+            <div class="container">
+                    <div class="row">
+    <div class="col-md custom-col">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1SbMoaKFJWo8u1tb2dAgHt?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
-    <div class="disco-2">
+    <div class="col-md custom-col">
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4QefABr1DLTsrqSmuu2Bf8?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-
-    <div class="disco-3"> 
+                    </div>
+                    <div class="row">
+    <div class="col-md custom-col"> 
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3MKQjYpaES80tFP7Qo2zH0?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
-    <div class="disco-4">   
+    <div class="col-md custom-col">   
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/48vGyeerQqM7mWU0JzRkAl?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-
-    <div class="disco-5">   
+                    </div>
+                    <div class="row">
+    <div class="col-md custom-col">   
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6anO6Uh11TivGpTI56aKCH?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
-    <div class="disco-6">   
+    <div class="col-md custom-col">   
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/02QhfNE9CheRJi0gi4hZIO?utm_source=generator" width="50%" height="200" frameBorder="0" allowfullscreen="" allow="; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
+                    </div>
             </div>
+</main>
 </body>
+<footer>
+    <div class="pie-de-pagina"></div>
+</footer>
 </html>
