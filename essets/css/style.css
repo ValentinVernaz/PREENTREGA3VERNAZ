@@ -66,9 +66,12 @@
     width: 500px;
     font-weight: bold;
 }
+
+
 .contenedor {
     position: relative;
 }
+
 
 #main-index {   
     display: flex;
@@ -76,6 +79,7 @@
     justify-content: center;
     background: linear-gradient(to top, rgba(193, 188, 255, 0.671), #ff190000) center
 }
+
 .imagen-fondo-derecha {
 
     display: flex;
@@ -91,6 +95,7 @@
     transform: translateX(42%);
     top: 250px;
     filter: blur(22px);
+    z-index: -8;
 }
 
 .galeria-1 {    
@@ -123,47 +128,15 @@
     right: 1.5rem;
 } 
 
-.parrafo-1 {  
+#parrafos {  
         font-family: actor-regular;
         text-shadow: 0px 1px 3px whitesmoke;
-        width: auto;
+        display: grid;
+        height: 90%;
+        justify-content: center;
         color: #000000;
         font-size: 25px;
-        line-height: 1.2;
-        text-align: left;
- 
-}
-
-.parrafo-2 {  
-    font-family: actor-regular;
-    text-shadow: 0px 1px 3px whitesmoke;
-    width: auto;
-    color: #000000;
-    font-size: 25px;
-    line-height: 1.2;
-    text-align: left;
-
-}
-.parrafo-3 {  
-    font-family: actor-regular;
-    text-shadow: 0px 1px 3px whitesmoke;
-    width: auto;
-    color: #000000;
-    font-size: 25px;
-    line-height: 1.2;
-    text-align: left;
-
-}
-
-.parrafo-4 {  
-    font-family: actor-regular;
-    text-shadow: 0px 1px 3px whitesmoke;
-    width: auto;
-    color: #000000;
-    font-size: 25px;
-    line-height: 1.2;
-    text-align: center;
-
+        z-index: 2;
 }
 
 .padre-discos {
@@ -172,31 +145,17 @@
     left: 18rem;
 }
 
-.redes-instagram {
-    width: 12rem;
-    position: absolute;
-    top: 6rem;
-    left: 5rem;
-}
-.redes-spotify {
-    position: absolute;
-    left: 30rem;
-    top: 6rem;
+#redes-sociales {   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
 }
 
-.redes-twitterx {
-    height: 10rem;
-    position: absolute;
-    top: 6rem;
-    right: 5rem;
-
-}
-
-.redes-facebook {
-    height: 10rem;
-    position: relative;
-    top: 17rem;
-    left: 30rem;
+.redes-sociales-hijo {  
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem
+    fot
 }
 
 
@@ -224,11 +183,11 @@ ul {
 body {
     font-family: "actor-regular", sans-serif;
     font-size: 16px;
-    margin: 0rem;
-    padding: 0rem;
-    background: linear-gradient(to top, rgba(193, 188, 255, 0.671), #ff190000) center;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background: #9b287b;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+
 }
 
 /* Media query para dispositivos con un ancho máximo de 767px (para dispositivos móviles) */
@@ -238,61 +197,20 @@ body {
         overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
     }
 
-.imagen-fondo-derecha {
+    .imagen-fondo-derecha {
         max-width: 100%; /* Reducir el ancho del contenedor de la imagen */
     }
 
-.imagen-fondo-derecha img {
+    .imagen-fondo-derecha img {
 
         display: flex;
         justify-content: center;
         align-items: center;     
     }
 
-.curiosidades {
-        width: 100%;
-        font-size: auto;
+    .curiosidades {
+        width: 100%; /* Ancho completo */
+        font-size: auto; /* Tamaño de fuente más pequeño */
 
     }
-}
-
-.btn-custom-purple {
-    background-color: #9b287aa8;
-    color: #fff;
-    border-radius: 1rem
-}
-
-#body_pages {
-    font-family: "actor-regular", sans-serif;
-    font-size: 16px;
-    margin: 0rem;
-    padding: 0rem;
-    background: linear-gradient(to top, rgba(193, 188, 255, 0.671), #ff190000) center;
-    overflow-x: hidden;
-    background-repeat: no-repeat;  
-    
-}
-
-@media (max-width: 767px) {
-    .parrafo-1 {  
-        width:99%;
-        text-align: center;
-    }
-
-.parrafo-2 {  
-    width:99%;
-    text-align: center;
-}
-
-.parrafo-3 {  
-    width:99%;
-    text-align: center;
-}
-
-
-.parrafo-4 {
-    width:99%;
-    text-align: center;
-}
-
 }
